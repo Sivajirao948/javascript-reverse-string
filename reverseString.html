@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            padding: 0;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: rgb(173, 239, 60);
+        
+        }
+        #sivaji{
+            border-radius: 10px;
+            padding: 10px;
+            color: rgb(194, 9, 9);
+            font-size: 20px;
+        }
+        #reverse{
+            border-radius: 3px;
+            padding: 2px;
+            font-size: 15px;
+            color: mediumblue;
+        }
+        p{
+            color: red;
+            font-size: 35px;
+        }
+    </style>
+
+    <input type="text" id="sivaji" placeholder="Enter a String"><br> <br>&nbsp;&nbsp;
+    <button onclick="reverseString()" id="reverse" >Reverse</button>
+    &nbsp;&nbsp;
+    <p id="paragrapash"></p>
+
+
+    <script>
+        function reverseString(){
+            const abc = document.getElementById('sivaji').value
+            const reversed = abc.split('').reverse().join('')
+            document.getElementById('paragrapash').textContent = reversed
+        }
+    </script>
+    
+</body>
+</html>
